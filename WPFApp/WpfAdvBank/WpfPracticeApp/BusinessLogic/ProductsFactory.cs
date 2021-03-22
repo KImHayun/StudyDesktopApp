@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WpfPracticeApp
+namespace WpfPracticeApp.BusinessLogic
 {
     public class ProductsFactory
     {
@@ -59,7 +59,6 @@ namespace WpfPracticeApp
     public class Product : Notifier
     {
         private string title;
-
         public string Title
         {
             get { return title; }
@@ -71,7 +70,6 @@ namespace WpfPracticeApp
         }
 
         private decimal price;
-
         public decimal Price
         {
             get { return price; }
@@ -83,7 +81,6 @@ namespace WpfPracticeApp
         }
 
         private string color;
-
         public string Color
         {
             get { return color; }
@@ -95,7 +92,6 @@ namespace WpfPracticeApp
         }
 
         private string reference;
-
         public string Reference
         {
             get { return reference; }
@@ -105,6 +101,5 @@ namespace WpfPracticeApp
                 OnPropertyChanged("Reference");
             }
         }
-
     }
 }

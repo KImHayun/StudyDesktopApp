@@ -21,6 +21,8 @@ namespace WpfPracticeApp
     /// </summary>
     public partial class Products : Page
     {
+        private ProductsFactory factory;
+
         public Products()
         {
             InitializeComponent();
@@ -28,6 +30,8 @@ namespace WpfPracticeApp
 
         private void Page_Initialized(object sender, EventArgs e)
         {
+            #region comment
+            /*
             var cars = new List<Car>();
             for (int i = 0; i < 10; i++)
             {
@@ -40,8 +44,16 @@ namespace WpfPracticeApp
                     MainColor = Color.FromRgb(red, green, blue)
                 });
             }
+            */
+            //this.DataContext = cars;
+            #endregion
+            factory = new ProductsFactory();
+            GrdProducts.ItemsSource = factory.GetAllProducts();
+        }
 
-            this.DataContext = cars;
+        private void TxtSearch_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            GrdProducts.ItemsSource = factory.FindProducts(TxtSearch.Text);
         }
     }
 }

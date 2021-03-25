@@ -259,5 +259,10 @@ namespace IoTSensorMonApp
             ChtPhotoResistors.ChartAreas[0].AxisX.ScaleView.Zoom(sensors.Count - xCount, sensors.Count);
             ChtPhotoResistors.ChartAreas[0].AxisX.Interval = xCount / 4;
         }
+
+        private void LsbPhotoResistors_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

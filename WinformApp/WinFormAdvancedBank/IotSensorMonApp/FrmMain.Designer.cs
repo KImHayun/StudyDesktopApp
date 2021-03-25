@@ -121,14 +121,14 @@ namespace IoTSensorMonApp
             // MnuBeginSimulation
             // 
             this.MnuBeginSimulation.Name = "MnuBeginSimulation";
-            this.MnuBeginSimulation.Size = new System.Drawing.Size(180, 22);
+            this.MnuBeginSimulation.Size = new System.Drawing.Size(113, 22);
             this.MnuBeginSimulation.Text = "시작(&B)";
             this.MnuBeginSimulation.Click += new System.EventHandler(this.MnuBeginSimulation_Click);
             // 
             // MnuEndSimulation
             // 
             this.MnuEndSimulation.Name = "MnuEndSimulation";
-            this.MnuEndSimulation.Size = new System.Drawing.Size(180, 22);
+            this.MnuEndSimulation.Size = new System.Drawing.Size(113, 22);
             this.MnuEndSimulation.Text = "끝(&E)";
             this.MnuEndSimulation.Click += new System.EventHandler(this.MnuEndSimulation_Click);
             // 
@@ -201,6 +201,7 @@ namespace IoTSensorMonApp
             this.LsbPhotoResistors.ScrollAlwaysVisible = true;
             this.LsbPhotoResistors.Size = new System.Drawing.Size(336, 122);
             this.LsbPhotoResistors.TabIndex = 4;
+            this.LsbPhotoResistors.SelectedIndexChanged += new System.EventHandler(this.LsbPhotoResistors_SelectedIndexChanged);
             // 
             // groupBox2
             // 

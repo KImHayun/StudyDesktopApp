@@ -13,7 +13,7 @@ namespace WpfTestApp
         {
             this.Add(new Person("Willa", "Cather"));
             this.Add(new Person("Isak", "Dinesen"));
-            this.Add(new Person("Victor", "Hugo"));
+            this.Add(new Person("Kim", "Hayun"));
         }
     }
 }

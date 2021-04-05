@@ -58,10 +58,5 @@ namespace ModernUITestApp
             CboDivision.DisplayMemberPath = "NAME";
             CboDivision.SelectedValuePath = "VALUE";
         }
-
-        private void Button_Click_2(object sender, RoutedEventArgs e)
-        {
-
-        }
     }
 }

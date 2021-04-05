@@ -120,7 +120,7 @@
                             <Button 
                                 Style="{StaticResource MaterialDesignFlatMidBgButton}"
                                 ToolTip="MaterialDesignFlatMidButton"
-                                Content="삭제" Click="Button_Click_2" />
+                                Content="삭제" />
                             <Button
                                 Style="{StaticResource MaterialDesignFlatLightBgButton}"
                                 ToolTip="MaterialDesignFlatLightButton"
